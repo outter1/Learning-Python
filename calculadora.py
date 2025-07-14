@@ -1,29 +1,46 @@
-def calculadora() :
-    print("========BEM VINDO A CALCULADORA========")
-    print("1. Soma \n2.Subtração \n3. Multiplicação \n4. Divisão ")
-    opcao = int(input("Oque deseja fazer : "))
-    numbone = float(input("Agora digite o primero número : "))
-    numbtwo = float(input("Agora digite o segundo número : "))
+print("Olá bem vindo a calculadora")
+print("Escolha a operação matemática")
+
+print("1 - Multiplicação")
+print("2 - Divisão")
+print("3 - Subtração")
+print("4 - Adição")
+escolha = input("Escolha de 1 a 4: ")
+
+if escolha == "1":
+    print("Você escolheu multiplicação")
+    primeironumero = float(input("Digite o primeiro numero: "))
+    segundonumero = float(input("Digite o segundo numero: "))
+    print(f"O resultado foi de: {primeironumero * segundonumero}")
     
-    if opcao == 1 :
-        print("A soma entre {} e {} é :".format(numbone, numbtwo))
-        print(numbone + numbtwo)
-        
-    elif opcao == 2 :
-        print("A subtração entre {} e {} é :".format(numbone, numbtwo))
-        print(numbone - numbtwo)
-        
-    elif opcao == 3 : 
-        print("A multiplicação entre {} e {} é :".format(numbone, numbtwo))
-        print(numbone * numbtwo)
-        
-    elif opcao == 4 :
-        print("A divisao entre {} e {} é :".format(numbone, numbtwo))
-        print(numbone / numbtwo)
-        
-    else: 
-        print("Opção inválida!") 
-        
-calculadora () 
-        
+elif escolha == "2":
+    print("Você escolheu divisão")
+    print("Escolha os numeros")
+    primeironumero = float(input("Selecione o primeiro numero: "))
+    segundonumero = float(input("Digite o segundo numero: "))
+    print(f"O resultado foi de: {primeironumero / segundonumero}")
+    
+elif escolha == "3":
+    print("Você escolheu subtração")
+    print("Escolha os numeros")
+    primeironumero = float(input("Selecione o primeiro numero: "))
+    segundonumero = float(input("Digite o segundo numero: "))
+    print(f"O resultado foi de: {primeironumero - segundonumero}")
+    
+elif escolha == "4":
+    print("Você escolheu adição")
+    print("Escolha os numeros")
+    primeironumero = float(input("Selecione o primeiro numero: "))
+    segundonumero = float(input("Digite o segundo numero: "))
+    print(f"O resultado foi de: {primeironumero + segundonumero}")
+    
+else:
+    print("Opção Inválida")
+    print("Selecione novamente")
+    print("1 - Multiplicação")
+    print("2 - Divisão")
+    print("3 - Subtração")
+    print("4 - Adição")
+    escolha = input("Escolha de 1 a 4: ")
+    
     
