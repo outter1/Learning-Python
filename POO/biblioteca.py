@@ -40,4 +40,23 @@ nome = input("Digite o seu nome: ")
 print("\n Livros disponiveis para empréstimo: ")
 for i, livro in enumerate(livros, start=1):
     print(f"{i}. {livro.titulo} - {livro.autor}")
+
+#Solicitar a escolha do livro pelo usuário
+    while True:
+        escolha = int(input("\n Digite o número do livro que deseja pegar emprestado: "))
+
+    if i <= escolha <= len(livros):
+        livro_selecionado = livros[escolha -1]
+        break
+    else:
+        print(f"Por favor, digite um nýmero entre 1 e {len.livros}).")
+
+    print(f"\n Empréstimo confirmado!")
+    print(f"{nome} pegou emprestado o livro'{livro_selecionado.titulo)' de {livro_selecionado.autor}.")
+
+main()
     
+
+    
+    
+
